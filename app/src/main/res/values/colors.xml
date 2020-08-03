@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTextoNuevaCita">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorTexto">#97C887</color>
+    <color name="colorScreenBackground">#A7B0C6</color>
+    <color name="colorPrimary">#E1E4ED</color>
+
+    <color name="blue">#FF1E39E9</color>
+    <color name="green">#FF97C887</color>
+    <color name="purple">#FF8300D4</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF7F00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="azure">#007FFF</color>
+    <color name="violet">#7F00FF</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="spring_green">#00FF7F</color>
+    <color name="chartreuse">#7FFF00</color>
+
+
+    <array name="rainbow">
+        <item>@color/blue</item>
+        <item>@color/green</item>
+        <item>@color/purple</item>
+        <item>@color/red</item>
+        <item>@color/orange</item>
+        <item>@color/yellow</item>
+        <item>@color/cyan</item>
+        <item>@color/azure</item>
+        <item>@color/violet</item>
+        <item>@color/magenta</item>
+        <item>@color/spring_green</item>
+        <item>@color/chartreuse</item>
+    </array>
+
+
+</resources>
+
+
+
