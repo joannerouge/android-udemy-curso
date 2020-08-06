@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    private val rainbowColors = listOf(R.color.blue, R.color.green, R.color.blue)
     // Clase de cita para guardar el texto y el autor
     // Una clase que nos ayude a generar citas al azar
 
@@ -15,14 +14,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        quoteTextView.setTextColor(Color.BLACK)
+        quoteTextView.setTextColor(ColorGenerator.getRandomColor())
+        val quote = QuoteGenerator.getQuote()
+        quoteTextView.text = quote.text
+        autorTextView.text = quote.author
+        mainLayout.setBackgroundColor(ColorGenerator.getRandomColor())
 
         newQuoteButton.setOnClickListener {
-            val quoteGenerator = QuoteGenerator()
-            val quote = quoteGenerator.getQuote()
+            val quote = QuoteGenerator.getQuote()
+            quoteTextView.setTextColor(ColorGenerator.getRandomColor())
             quoteTextView.text = quote.text
             autorTextView.text = quote.author
-            mainLayout.setBackgroundColor(rainbowColors.random())
+            mainLayout.setBackgroundColor(ColorGenerator.getRandomColor())
+
         }
     }
 

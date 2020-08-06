@@ -30,10 +30,10 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif-condensed-light"
-        android:text="A. Dumblendore"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/quoteTextView"
-        app:layout_constraintTop_toBottomOf="@+id/quoteTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/quoteTextView"
+        tools:text="A. Dumblendore" />
 
     <TextView
         android:id="@+id/quoteTextView"
@@ -42,7 +42,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:fontFamily="sans-serif-light"
-        android:text="Somos nuestras decisiones"
+       tools:text="Somos nuestras decisiones"
         android:textColor="@color/colorTexto"
         android:textSize="30sp"
         android:textStyle="italic"

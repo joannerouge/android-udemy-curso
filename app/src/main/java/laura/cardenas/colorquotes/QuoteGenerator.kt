@@ -1,6 +1,6 @@
 package laura.cardenas.colorquotes
 
-class QuoteGenerator {
+object QuoteGenerator {
     private val quoteList = listOf(
         Quote(text = "Somos nuestras decisiones", author = "A. Dumbledore"),
         Quote (text= "Stay hungry, stay foolish", author= "S. Jobs"),
@@ -9,5 +9,7 @@ class QuoteGenerator {
         Quote ( text= "La imaginación es más importante que el conocimiento", author= "A. Einstein"))
 
     fun getQuote (): Quote = quoteList.random()
+
+
 
 }
